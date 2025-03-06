@@ -1,5 +1,54 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
-body{
-    background: white;
+.card {
+    width: 200px;
+    height: 300px; /* Aumentar la altura de la carta */
+    margin: auto;
+    border: 2px solid #000;
+    border-radius: 10px;
+    position: relative; /* Para posicionar los palos */
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centrar el contenido verticalmente */
+    align-items: center; /* Centrar el contenido horizontalmente */
+    height: 100%;
+}
+
+.palo {
+    font-size: 4rem; /* Tamaño de los palos */
+}
+
+.esquina-superior-izquierda {
+    position: absolute;
+    top: -10px;
+    left: 10px;
+}
+
+.esquina-inferior-derecha {
+    position: absolute;
+    bottom: -10px;
+    right: 10px;
+}
+
+.card-title {
+    font-size: 3rem; /* Aumentar el tamaño del valor */
+}
+
+.spade {
+    color: black;
+}
+
+.club {
+    color: black;
+}
+
+.heart {
+    color: red;
+}
+
+.diamond {
+    color: red;
 }

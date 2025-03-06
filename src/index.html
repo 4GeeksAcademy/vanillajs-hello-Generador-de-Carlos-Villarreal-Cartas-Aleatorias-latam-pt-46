@@ -16,19 +16,17 @@
   </head>
   <body>
     <!-- Write your HTML code here, you can delete everything withing the body tags -->
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./assets/img/rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+    <body onload="generarCarta()">
+    <div class="container text-center mt-5">
+      <div id="carta" class="card">
+          <div class="card-body">
+              <div class="palo esquina-superior-izquierda" id="paloSuperior"></div>
+              <h5 id="valor" class="card-title"></h5>
+              <div class="palo esquina-inferior-derecha" id="paloInferior"></div>
+          </div>
       </div>
-    </div>
-
+  </div>
+  
     <!-- Do not delete this script tag, this is what connects your HTML with the Javascript code -->
     <script type="module" src="/app.js"></script>
   </body>
