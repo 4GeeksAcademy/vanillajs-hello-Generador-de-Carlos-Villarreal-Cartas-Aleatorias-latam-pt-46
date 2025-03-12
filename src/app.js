@@ -1,32 +1,50 @@
-import "bootstrap";
-import "./style.css";
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
+// Definimos los valores y palos posibles
+const valores = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K'];
+const palos = ['corazones', 'diamantes', 'tréboles', 'picas'];
 
+// Función para generar una carta aleatoria
 function generarCarta() {
-  const palos = ['♥', '♦', '♠', '♣'];
-  const valores = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A'];
+    // Seleccionamos un valor y un palo aleatorio
+    const valorAleatorio = valores[Math.floor(Math.random() * valores.length)];
+    const paloAleatorio = palos[Math.floor(Math.random() * palos.length)];
 
-  // Generar un palo aleatorio
-  const paloIndex = Math.floor(Math.random() * 4);
-  const palo = palos[paloIndex];
+    // Asignamos el valor a la carta
+    document.getElementById('valor').innerText = valorAleatorio;
 
-  // Generar un valor aleatorio
-  const valorIndex = Math.floor(Math.random() * 13);
-  const valor = valores[valorIndex];
+    // Asignamos el palo correspondiente
+    const paloSuperior = document.getElementById('paloSuperior');
+    const paloInferior = document.getElementById('paloInferior');
 
-  // Actualizar el contenido de la carta
-  const cartaDiv = document.getElementById('carta');
-  const valorElement = document.getElementById('valor');
-  const paloSuperiorElement = document.getElementById('paloSuperior');
-  const paloInferiorElement = document.getElementById('paloInferior');
+    // Limpiamos los palos anteriores
+    paloSuperior.innerHTML = '';
+    paloInferior.innerHTML = '';
 
-  valorElement.textContent = valor;
-  paloSuperiorElement.textContent = palo;
-  paloInferiorElement.textContent = palo;
+    // Creamos el símbolo del palo
+    let simboloPalo = '';
+    switch (paloAleatorio) {
+        case 'corazones':
+            simboloPalo = '♥'; // Corazón
+            paloSuperior.className = 'palo esquina-superior-izquierda heart';
+            paloInferior.className = 'palo esquina-inferior-derecha heart';
+            break;
+        case 'diamantes':
+            simboloPalo = '♦'; // Diamante
+            paloSuperior.className = 'palo esquina-superior-izquierda diamond';
+            paloInferior.className = 'palo esquina-inferior-derecha diamond';
+            break;
+        case 'tréboles':
+            simboloPalo = '♣'; // Trébol
+            paloSuperior.className = 'palo esquina-superior-izquierda club';
+            paloInferior.className = 'palo esquina-inferior-derecha club';
+            break;
+        case 'picas':
+            simboloPalo = '♠'; // Pica
+            paloSuperior.className = 'palo esquina-superior-izquierda spade';
+            paloInferior.className = 'palo esquina-inferior-derecha spade';
+            break;
+    }
 
-  // Aplicar la clase correspondiente al palo
-  cartaDiv.className = `card ${paloIndex === 0 ? 'heart' : paloIndex === 1 ? 'diamond' : paloIndex === 2 ? 'spade' : 'club'}`;
+    // Asignamos el símbolo del palo a las posiciones correspondientes
+    paloSuperior.innerHTML = simboloPalo;
+    paloInferior.innerHTML = simboloPalo;
 }
-
-
