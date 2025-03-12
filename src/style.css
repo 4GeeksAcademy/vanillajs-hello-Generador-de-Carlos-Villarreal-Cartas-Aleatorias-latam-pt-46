@@ -5,48 +5,48 @@
     border: 2px solid #000;
     border-radius: 10px;
     position: relative; /* Para posicionar los palos */
-  }
-  
-  .card-body {
+}
+
+.card-body {
     display: flex;
     flex-direction: column;
     justify-content: center; /* Centrar el contenido verticalmente */
     align-items: center; /* Centrar el contenido horizontalmente */
     height: 100%;
-  }
-  
-  .palo {
+}
+
+.palo {
     font-size: 4rem; /* Tamaño de los palos */
-  }
-  
-  .esquina-superior-izquierda {
+}
+
+.esquina-superior-izquierda {
     position: absolute;
     top: -10px;
     left: 10px;
-  }
-  
-  .esquina-inferior-derecha {
+}
+
+.esquina-inferior-derecha {
     position: absolute;
     bottom: -10px;
     right: 10px;
-  }
-  
-  .card-title {
+}
+
+.card-title {
     font-size: 4rem; /* Aumentar el tamaño del valor */
-  }
-  
-  .spade {
+}
+
+.spade {
     color: black;
-  }
-  
-  .club {
+}
+
+.club {
     color: black;
-  }
-  
-  .heart {
+}
+
+.heart {
     color: red;
-  }
-  
-  .diamond {
+}
+
+.diamond {
     color: red;
-  }
+}

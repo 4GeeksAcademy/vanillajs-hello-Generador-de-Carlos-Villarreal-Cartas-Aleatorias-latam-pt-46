@@ -4,47 +4,47 @@ const palos = ['corazones', 'diamantes', 'tréboles', 'picas'];
 
 // Función para generar una carta aleatoria
 function generarCarta() {
-    // Seleccionamos un valor y un palo aleatorio
-    const valorAleatorio = valores[Math.floor(Math.random() * valores.length)];
-    const paloAleatorio = palos[Math.floor(Math.random() * palos.length)];
+  // Seleccionamos un valor y un palo aleatorio
+  const valorAleatorio = valores[Math.floor(Math.random() * valores.length)];
+  const paloAleatorio = palos[Math.floor(Math.random() * palos.length)];
 
-    // Asignamos el valor a la carta
-    document.getElementById('valor').innerText = valorAleatorio;
+  // Asignamos el valor a la carta
+  document.getElementById('valor').textContent = valorAleatorio;
 
-    // Asignamos el palo correspondiente
-    const paloSuperior = document.getElementById('paloSuperior');
-    const paloInferior = document.getElementById('paloInferior');
+  // Asignamos el palo correspondiente
+  const paloSuperior = document.getElementById('paloSuperior');
+  const paloInferior = document.getElementById('paloInferior');
 
-    // Limpiamos los palos anteriores
-    paloSuperior.innerHTML = '';
-    paloInferior.innerHTML = '';
+  // Limpiamos los palos anteriores
+  paloSuperior.textContent = '';
+  paloInferior.textContent = '';
 
-    // Creamos el símbolo del palo
-    let simboloPalo = '';
-    switch (paloAleatorio) {
-        case 'corazones':
-            simboloPalo = '♥'; // Corazón
-            paloSuperior.className = 'palo esquina-superior-izquierda heart';
-            paloInferior.className = 'palo esquina-inferior-derecha heart';
-            break;
-        case 'diamantes':
-            simboloPalo = '♦'; // Diamante
-            paloSuperior.className = 'palo esquina-superior-izquierda diamond';
-            paloInferior.className = 'palo esquina-inferior-derecha diamond';
-            break;
-        case 'tréboles':
-            simboloPalo = '♣'; // Trébol
-            paloSuperior.className = 'palo esquina-superior-izquierda club';
-            paloInferior.className = 'palo esquina-inferior-derecha club';
-            break;
-        case 'picas':
-            simboloPalo = '♠'; // Pica
-            paloSuperior.className = 'palo esquina-superior-izquierda spade';
-            paloInferior.className = 'palo esquina-inferior-derecha spade';
-            break;
-    }
+  // Creamos el símbolo del palo
+  let simboloPalo = '';
+  switch (paloAleatorio) {
+    case 'corazones':
+      simboloPalo = '♥'; // Corazón
+      paloSuperior.className = 'palo esquina-superior-izquierda heart';
+      paloInferior.className = 'palo esquina-inferior-derecha heart';
+      break;
+    case 'diamantes':
+      simboloPalo = '♦'; // Diamante
+      paloSuperior.className = 'palo esquina-superior-izquierda diamond';
+      paloInferior.className = 'palo esquina-inferior-derecha diamond';
+      break;
+    case 'tréboles':
+      simboloPalo = '♣'; // Trébol
+      paloSuperior.className = 'palo esquina-superior-izquierda club';
+      paloInferior.className = 'palo esquina-inferior-derecha club';
+      break;
+    case 'picas':
+      simboloPalo = '♠'; // Pica
+      paloSuperior.className = 'palo esquina-superior-izquierda spade';
+      paloInferior.className = 'palo esquina-inferior-derecha spade';
+      break;
+  }
 
-    // Asignamos el símbolo del palo a las posiciones correspondientes
-    paloSuperior.innerHTML = simboloPalo;
-    paloInferior.innerHTML = simboloPalo;
+  // Asignamos el símbolo del palo a las posiciones correspondientes
+  paloSuperior.textContent = simboloPalo;
+  paloInferior.textContent = simboloPalo;
 }
