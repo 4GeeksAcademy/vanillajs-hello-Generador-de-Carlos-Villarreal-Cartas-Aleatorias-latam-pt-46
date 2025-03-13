@@ -29,18 +29,18 @@ function generarCarta() {
       break;
     case 'diamantes':
       simboloPalo = '♦'; // Diamante
-      paloSuperior.className = 'palo esquina-superior-izquierda diamond';
-      paloInferior.className = 'palo esquina-inferior-derecha diamond';
+      paloSuperior.className = 'palo esquina-superior-izquierda diamante';
+      paloInferior.className = 'palo esquina-inferior-derecha diamante';
       break;
     case 'tréboles':
       simboloPalo = '♣'; // Trébol
-      paloSuperior.className = 'palo esquina-superior-izquierda club';
-      paloInferior.className = 'palo esquina-inferior-derecha club';
+      paloSuperior.className = 'palo esquina-superior-izquierda trebol';
+      paloInferior.className = 'palo esquina-inferior-derecha trebol';
       break;
     case 'picas':
       simboloPalo = '♠'; // Pica
-      paloSuperior.className = 'palo esquina-superior-izquierda spade';
-      paloInferior.className = 'palo esquina-inferior-derecha spade';
+      paloSuperior.className = 'palo esquina-superior-izquierda pica';
+      paloInferior.className = 'palo esquina-inferior-derecha pica';
       break;
   }
 

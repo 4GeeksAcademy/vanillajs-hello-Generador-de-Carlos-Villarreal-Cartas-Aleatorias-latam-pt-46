@@ -35,11 +35,11 @@
     font-size: 4rem; /* Aumentar el tamaño del valor */
 }
 
-.spade {
+.pica {
     color: black;
 }
 
-.club {
+.trebol {
     color: black;
 }
 
@@ -47,6 +47,6 @@
     color: red;
 }
 
-.diamond {
+.diamante {
     color: red;
 }
