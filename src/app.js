@@ -24,8 +24,8 @@ function generarCarta() {
   switch (paloAleatorio) {
     case 'corazones':
       simboloPalo = '♥'; // Corazón
-      paloSuperior.className = 'palo esquina-superior-izquierda heart';
-      paloInferior.className = 'palo esquina-inferior-derecha heart';
+      paloSuperior.className = 'palo esquina-superior-izquierda corazon';
+      paloInferior.className = 'palo esquina-inferior-derecha corazon';
       break;
     case 'diamantes':
       simboloPalo = '♦'; // Diamante
