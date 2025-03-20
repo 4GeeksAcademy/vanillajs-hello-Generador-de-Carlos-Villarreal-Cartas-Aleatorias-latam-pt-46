@@ -34,19 +34,3 @@
 .card-title {
     font-size: 4rem; /* Aumentar el tamaño del valor */
 }
-
-.pica {
-    color: black;
-}
-
-.trebol {
-    color: black;
-}
-
-.heart {
-    color: red;
-}
-
-.diamante {
-    color: red;
-}
