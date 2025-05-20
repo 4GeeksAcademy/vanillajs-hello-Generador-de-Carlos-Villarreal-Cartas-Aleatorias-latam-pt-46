@@ -2,35 +2,34 @@
     width: 200px;
     height: 300px; /* Aumentar la altura de la carta */
     margin: auto;
-    border: 2px solid #000;
+    border: 3px solid #000;
     border-radius: 10px;
-    position: relative; /* Para posicionar los palos */
-}
-
-.card-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Centrar el contenido verticalmente */
-    align-items: center; /* Centrar el contenido horizontalmente */
-    height: 100%;
+    display: flex; /* Usar flexbox para centrar el contenido */
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Para posicionar los elementos absolutos */
 }
 
 .palo {
-    font-size: 4rem; /* Tamaño de los palos */
+    font-size: 3rem; /* Tamaño de los palos */
+    line-height: 1; /* Asegura que los palos no tengan espacio extra */
 }
 
 .esquina-superior-izquierda {
     position: absolute;
-    top: -10px;
-    left: 10px;
+    top: 20px;
+    left: 20px;
+    font-size: 3rem; /* Igualar tamaño al card-title */
 }
 
 .esquina-inferior-derecha {
     position: absolute;
-    bottom: -10px;
-    right: 10px;
+    bottom: 20px; /* Cambiado a bottom para estar en la esquina inferior */
+    right: 20px; /* Mover hacia la derecha */
+    font-size: 3rem; /* Igualar tamaño al card-title */
 }
 
 .card-title {
-    font-size: 4rem; /* Aumentar el tamaño del valor */
+    font-size: 3rem; /* Aumentar el tamaño del valor */
+    text-align: center; /* Centrar el texto */
 }
