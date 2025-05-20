@@ -11,7 +11,7 @@
 }
 
 .palo {
-    font-size: 3rem; /* Tamaño de los palos */
+    font-size: 9rem; /* Tamaño de los palos */
     line-height: 1; /* Asegura que los palos no tengan espacio extra */
 }
 
@@ -19,17 +19,17 @@
     position: absolute;
     top: 20px;
     left: 20px;
-    font-size: 3rem; /* Igualar tamaño al card-title */
+    font-size: 5rem; /* Igualar tamaño al card-title */
 }
 
 .esquina-inferior-derecha {
     position: absolute;
     bottom: 20px; /* Cambiado a bottom para estar en la esquina inferior */
     right: 20px; /* Mover hacia la derecha */
-    font-size: 3rem; /* Igualar tamaño al card-title */
+    font-size: 5rem; /* Igualar tamaño al card-title */
 }
 
 .card-title {
-    font-size: 3rem; /* Aumentar el tamaño del valor */
+    font-size: 5rem; /* Aumentar el tamaño del valor */
     text-align: center; /* Centrar el texto */
 }
